@@ -43,7 +43,13 @@ To get this project up and running, you'll need to set up a few things:
 (The r in front of the quotations allows you to use single backslashes as a path separator. If you don't use this, 
 	you need to make every backslash a \\ so that Python doesn't think you're trying to use special characters)
 
-12. Now you can open a PowerShell/CMD Prompt, redirect it to the project folder containing 'watermarker.py', and type in `python watermarker.py`
-    to run the script.
+## Usage
+Open a PowerShell/CMD Prompt, redirect it to the project folder containing 'watermarker.py', and type in 
+```
+python watermarker.py
+```
+Then follow the prompts on-screen.
 
-Enjoy :)
+### Enjoy :)
+
+###### Azsry 12/06/19
