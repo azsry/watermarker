@@ -2,6 +2,9 @@
 # watermarker
 A small python script to generate rotated text watermarks to cover an image.
 
+## Demonstration
+![Original Image](https://cdn.pixabay.com/photo/2016/02/19/15/46/dog-1210559__340.jpg)
+![Watermarked copy](http://up.azsry.com/dog-1210559__340_watermarked.png)
 ## Installation
 To get this project up and running, you'll need to set up a few things:
 
@@ -34,14 +37,14 @@ To get this project up and running, you'll need to set up a few things:
 
 11. Scroll to the bottom and find FFMPEG_BINARY and IMAGEMAGICK_BINARY. Replace what's after the = with a path to your 
     ffmpeg.exe and magick.exe that you downloaded earlier. Save the file after making these changes
-	For example:	
+  For example:  
 ```
-		FFMPEG_BINARY = r"D:\Downloads\ffmpeg-4.1-win64-static\bin\ffmpeg.exe"
-		IMAGEMAGICK_BINARY = r"C:\Program Files\ImageMagick-7.0.8-Q16\magick.exe"
+  FFMPEG_BINARY = r"D:\Downloads\ffmpeg-4.1-win64-static\bin\ffmpeg.exe"
+  IMAGEMAGICK_BINARY = r"C:\Program Files\ImageMagick-7.0.8-Q16\magick.exe"
 ```
 
 (The r in front of the quotations allows you to use single backslashes as a path separator. If you don't use this, 
-	you need to make every backslash a \\ so that Python doesn't think you're trying to use special characters)
+  you need to make every backslash a \\ so that Python doesn't think you're trying to use special characters)
 
 ## Usage
 Open a PowerShell/CMD Prompt, redirect it to the project folder containing 'watermarker.py', and type in 

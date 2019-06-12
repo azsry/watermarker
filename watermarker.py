@@ -1,20 +1,20 @@
 from moviepy.editor import ImageClip, TextClip, CompositeVideoClip
 import os
 
-watermark = "BIG DICK ENERGY"
+watermark = "watermarker by azsry"
 
 textclips = []
-xpos = 0
-ypos = 0
 
 img_path = str(input("Drag the image you want to be watermarked into this window: "))
 save_folder = os.path.dirname(img_path)
 filename = os.path.splitext(os.path.basename(img_path))[0]
 image = ImageClip(img_path)
 
-while ypos < image.h:
-    xpos = 0
-    while xpos < image.w:
+ypos = -image.h
+
+while ypos <= image.h:
+    xpos = -image.w
+    while xpos <= image.w:
         text = TextClip(watermark, fontsize=36, color='white')  
         text_masked = text.add_mask().rotate(30).set_opacity(0.1).set_position((xpos,ypos))
 
